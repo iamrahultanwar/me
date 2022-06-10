@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  traefik:
+    image: traefik:v1.7-alpine
+    command:
+      - --api
+      - --docker
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik/traefik.toml:/etc/traefik/traefik.toml:ro
+      - ./traefik/acme:/etc/traefik/acme
+    networks:
+      - RT_NETWORK
+
+  me_docs:
+    image: me_docs
+    build: .
+    networks:
+      - RT_NETWORK
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=me_docs"
+      - "traefik.frontend.rule=Host:iamrahultanwar.me"
+      - "traefik.port=80"
+      - "traefik.docker.network=RT_NETWORK"
+
+networks:
+  RT_NETWORK:
