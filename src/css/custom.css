@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+* {
+  font-family: 'Shippori Antique B1', sans-serif;
+} 
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1363df;
+  --ifm-color-primary-dark: #1159c9;
+  --ifm-color-primary-darker: #1054be;
+  --ifm-color-primary-darkest: #0d459c;
+  --ifm-color-primary-light: #1e6fec;
+  --ifm-color-primary-lighter: #2976ed;
+  --ifm-color-primary-lightest: #4b8cf0;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #06283d;
+  --ifm-color-primary-dark: #052437;
+  --ifm-color-primary-darker: #052234;
+  --ifm-color-primary-darkest: #041c2b;
+  --ifm-color-primary-light: #072c43;
+  --ifm-color-primary-lighter: #072e46;
+  --ifm-color-primary-lightest: #08344f;
+}
