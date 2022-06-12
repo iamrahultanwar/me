@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Learning is the key',
   tagline: 'The best way to grow is learning',
-  url: 'iamrahultanwar.me',
+  url: 'https://iamrahultanwar.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,10 +18,7 @@ const config = {
   organizationName: 'iamrahultanwar',
   projectName: 'me',
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
   presets: [
     [
