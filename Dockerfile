@@ -3,5 +3,5 @@ WORKDIR /app
 COPY . /app
 RUN npm install 
 RUN npm run build
-CMD node index.js
-EXPOSE 80
+CMD npm run serve
+EXPOSE 3000
