@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Learning is the key',
   tagline: 'The best way to grow is learning',
-  url: 'https://iamrahultanwar.me',
+  url: 'https://rahultanwar.me',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,7 +18,38 @@ const config = {
   organizationName: 'iamrahultanwar',
   projectName: 'me',
 
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local"),
+
+  [
+    '@docusaurus/plugin-pwa',
+    {
+      debug: true,
+      offlineModeActivationStrategies: [
+        'appInstalled',
+        'standalone',
+        'queryString',
+      ],
+      pwaHead: [
+        {
+          tagName: 'link',
+          rel: 'icon',
+          href: '/img/logo.png',
+        },
+        {
+          tagName: 'link',
+          rel: 'manifest',
+          href: '/manifest.json', // your PWA manifest
+        },
+        {
+          tagName: 'meta',
+          name: 'theme-color',
+          content: 'rgb(37, 194, 160)',
+        },
+      ],
+    },
+  ],
+
+  ],
 
   presets: [
     [
