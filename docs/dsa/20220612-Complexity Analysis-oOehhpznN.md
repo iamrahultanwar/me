@@ -19,3 +19,8 @@ It's expressed using **Big O** notation.
 ### Space Complexity 
 A measure of how much auxiliary memomry an algorithm takes up, space complexity is a central concept in the field of algorithms and in coding interview.
 It's expressed using **Big O** notation.
+
+
+![clipboard.png](FSHWyBmF8-clipboard.png)
+
+![clipboard.png](pZKQ1pCVS-clipboard.png)

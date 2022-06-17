@@ -89,7 +89,7 @@ Conversely, the following binary tree _isn't_ complete, because the nodes in its
  
  
 The following is an example of a balanced binary tree:
-    
+  ```
               1
            /     \
           2       3
@@ -97,7 +97,8 @@ The following is an example of a balanced binary tree:
        4     5 6     7
      /   \         /   
     10    9       8
-    
+```
+   
 *   #### Full Binary Tree
     
     A **binary tree** whose nodes all have either two child-nodes or zero child-nodes. Example:
@@ -110,3 +111,4 @@ The following is an example of a balanced binary tree:
        /   \
       8     9
 ```      
+
