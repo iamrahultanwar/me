@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const baseUrl = process.env.BASE_URL || "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,36 +19,37 @@ const config = {
   organizationName: 'iamrahultanwar',
   projectName: 'me',
 
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local"),
+  plugins: [
+    require.resolve("@cmfcmf/docusaurus-search-local"),
 
-  [
-    '@docusaurus/plugin-pwa',
-    {
-      debug: true,
-      offlineModeActivationStrategies: [
-        'appInstalled',
-        'standalone',
-        'queryString',
-      ],
-      pwaHead: [
-        {
-          tagName: 'link',
-          rel: 'icon',
-          href: '/img/logo.png',
-        },
-        {
-          tagName: 'link',
-          rel: 'manifest',
-          href: '/manifest.json', // your PWA manifest
-        },
-        {
-          tagName: 'meta',
-          name: 'theme-color',
-          content: 'rgb(37, 194, 160)',
-        },
-      ],
-    },
-  ],
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/logo.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: `${baseUrl}manifest.json`,
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
+      },
+    ],
 
   ],
 

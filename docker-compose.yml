@@ -19,8 +19,6 @@ services:
   me_docs:
     image: me_docs
     build: .
-    volumes:
-      - ./node_modules:/app/node_modules
     networks:
       - RT_NETWORK
 
@@ -33,6 +31,4 @@ services:
 
 networks:
   RT_NETWORK:
-
-volumes:
-  node_modules:  
+ 
