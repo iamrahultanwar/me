@@ -3,9 +3,9 @@
   "name": "Rahul Tanwar: Learning is the key",
   "icons": [
     {
-      "src": "/img/logo.svg",
-      "type": "/img/svg+xml",
-      "sizes": "144x144"
+      "src": "/img/logo_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
     }
   ],
   "start_url": "/",
