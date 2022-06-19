@@ -1,9 +1,9 @@
 import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 
 export default function Home() {
+
   return (
     <Layout
       description="Will update it later">
@@ -13,7 +13,11 @@ export default function Home() {
             Lets write some code
           </code>
         </h1>
-        <img src='https://sado0823.github.io/assets/images/hello-world-2074ad754c4c5269d203396b526efcb7.gif' />
+        <img src='/img/go-lang-hello-world.gif' style={{ borderRadius: 5 }} />
+
+        <button style={{ marginTop: 10 }} onClick={() => {
+          window.open('/file/rahul-tanwar-resume.pdf')
+        }} className='css-button-3d--sky' >My Resume</button>
       </div>
     </Layout>
   );

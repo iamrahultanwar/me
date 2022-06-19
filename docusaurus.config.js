@@ -88,6 +88,7 @@ const config = {
         },
         items: [
           { to: '/docs/dsa/', label: 'DSA', position: 'right' },
+          { to: 'docs/algorithm/', label: 'Algorithm', position: 'right' },
           {
             href: 'https://github.com/iamrahultanwar',
             label: 'GitHub',

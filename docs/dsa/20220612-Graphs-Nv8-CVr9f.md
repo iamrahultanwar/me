@@ -330,5 +330,8 @@ func main() {
 ## References
 
 
-[![Graphs Part 1](68oc6I0m5-clipboard.png)](https://www.youtube.com/watch?v=JDP1OVgoa0Q)]
-[![Graph Part 2](siCn4l6_7-clipboard.png)](https://www.youtube.com/watch?v=bSZ57h7GN2w)]
+<iframe width="950" height="534" src="https://www.youtube.com/embed/JDP1OVgoa0Q" title="Graph data structure and graph representation  (Part 1 of 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br/>
+
+<iframe width="950" height="534" src="https://www.youtube.com/embed/bSZ57h7GN2w" title="Graph data structure and graph representation in Golang (Part 2 of 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
