@@ -18,7 +18,7 @@ const config = {
 
   organizationName: 'iamrahultanwar',
   projectName: 'me',
-
+  deploymentBranch: "deploy",
   plugins: [
     require.resolve("@cmfcmf/docusaurus-search-local"),
 
@@ -62,7 +62,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
 
           editUrl:
-            'https://github.com/iamrahultanwar/me',
+            'https://github.com/iamrahultanwar/me/tree/master',
         },
         blog: {
           showReadingTime: true,
