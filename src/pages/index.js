@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 
-
 export default function Home() {
 
   return (
@@ -13,10 +12,10 @@ export default function Home() {
             Lets write some code
           </code>
         </h1>
-        <img src='/img/go-lang-hello-world.gif' style={{ borderRadius: 5 }} />
+        <img src='img/go-lang-hello-world.gif' style={{ borderRadius: 5 }} />
 
         <button style={{ marginTop: 10 }} onClick={() => {
-          window.open('/file/rahul-tanwar-resume.pdf')
+          window.open('file/rahul-tanwar-resume.pdf')
         }} className='css-button-3d--sky' >My Resume</button>
       </div>
     </Layout>
