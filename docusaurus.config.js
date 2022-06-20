@@ -10,7 +10,7 @@ const config = {
   title: 'Learning is the key',
   tagline: 'The best way to grow is learning',
   url: 'https://rahultanwar.me',
-  baseUrl: '/',
+  baseUrl: '/me/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
