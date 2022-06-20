@@ -74,7 +74,7 @@ The DFS algorithm works as follows:
 
 The pseudocode for DFS is shown below. In the init() function, notice that we run the DFS function on every node. This is because the graph might have two different disconnected parts so to make sure that we cover every vertex, we can also run the DFS algorithm on every node.
 
-```
+```js 
 DFS(G, u)
     u.visited = true
     for each v ∈ G.Adj\[u\]
