@@ -11,7 +11,7 @@ const config = {
   tagline: 'The best way to grow is learning',
   url: 'https://rahultanwar.me',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
