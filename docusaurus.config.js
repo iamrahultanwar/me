@@ -21,7 +21,7 @@ const config = {
   deploymentBranch: "deploy",
   plugins: [
     require.resolve("@cmfcmf/docusaurus-search-local"),
-
+    require.resolve("./plugins/inappeditor"),
     [
       '@docusaurus/plugin-pwa',
       {
