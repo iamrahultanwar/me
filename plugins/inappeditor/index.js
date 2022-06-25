@@ -6,6 +6,7 @@ module.exports = async function myPlugin(context, options) {
                 .command('editor')
                 .description('Editor to create docs in browser')
                 .action(() => {
+
                     console.log("TODO");
                 });
         },
