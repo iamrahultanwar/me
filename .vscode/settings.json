@@ -1,5 +1,6 @@
 {
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "file:///Users/rt/projects/me/.github/workflows/deploy.yml"
-  }
+  },
+  "svg.preview.background": "transparent"
 }

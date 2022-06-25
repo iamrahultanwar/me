@@ -45,7 +45,7 @@ const config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: '#4433ff',
           },
         ],
       },
@@ -77,23 +77,44 @@ const config = {
     ],
   ],
 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+      },
       navbar: {
-        title: 'Rahul Tanwar',
+        title: 'Lets Learn',
         logo: {
           alt: 'name logo',
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/docs/dsa/', label: 'DSA', position: 'right' },
-          { to: 'docs/algorithm/', label: 'Algorithm', position: 'right' },
+          {
+            type: 'dropdown',
+            label: 'Notes',
+            position: 'left',
+            items: [
+              { to: '/docs/dsa/', label: 'Data Structure' },
+              { to: 'docs/algorithm/', label: 'Algorithm' },
+            ]
+          },
+
+
           {
             href: 'https://github.com/iamrahultanwar',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: baseUrl + '/file/rahul-tanwar-resume.pdf',
+            label: 'My Resume',
+            position: 'right',
+            className: 'css-button-sharp--sky',
+          },
+
         ],
       },
       // footer: {

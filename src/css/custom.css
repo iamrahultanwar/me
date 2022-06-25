@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
 body {
   font-family: 'Shippori Antique B1', sans-serif;
+  font-size: small;
 } 
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1363df;
-  --ifm-color-primary-dark: #1159c9;
-  --ifm-color-primary-darker: #1054be;
-  --ifm-color-primary-darkest: #0d459c;
-  --ifm-color-primary-light: #1e6fec;
-  --ifm-color-primary-lighter: #2976ed;
-  --ifm-color-primary-lightest: #4b8cf0;
+  --ifm-color-primary: #4433ff;
+  --ifm-color-primary-dark: #2814ff;
+  --ifm-color-primary-darker: #1a05ff;
+  --ifm-color-primary-darkest: #1200d6;
+  --ifm-color-primary-light: #6052ff;
+  --ifm-color-primary-lighter: #6e61ff;
+  --ifm-color-primary-lightest: #988fff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,9 +28,8 @@ body {
 }
 
 
-.css-button-3d--sky {
-  min-width: 130px;
-  height: 40px;
+.css-button-sharp--sky {
+  min-width: 100px;
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
@@ -38,16 +38,12 @@ body {
   position: relative;
   display: inline-block;
   outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #3a86ff;
-  box-shadow: 0 5px #4433ff;
+  border: 2px solid #4433ff;
+  background: #4433ff;
+  text-align: center;
+  font-size: 14px;
 }
-.css-button-3d--sky:hover {
-  box-shadow: 0 3px #4433ff;
-  top: 1px;
-}
-.css-button-3d--sky:active {
-  box-shadow: 0 0 #4433ff;
-  top: 5px;
+.css-button-sharp--sky:hover {
+  background: #fff;
+  color: #4433ff
 }
