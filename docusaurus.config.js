@@ -28,7 +28,6 @@ const config = {
   deploymentBranch: "deploy",
   plugins: [
     require.resolve("@cmfcmf/docusaurus-search-local"),
-
     [
       '@docusaurus/plugin-pwa',
       {
@@ -56,7 +55,7 @@ const config = {
           },
         ],
       },
-    ],
+    ]
   ],
 
   presets: [
@@ -64,7 +63,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+         docs: {
           sidebarPath: require.resolve('./sidebar/autogen.js'),
 
           editUrl:
