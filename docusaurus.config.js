@@ -27,6 +27,7 @@ const config = {
   projectName: 'me',
   deploymentBranch: "deploy",
   plugins: [
+    require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       '@docusaurus/plugin-pwa',
       {
@@ -54,8 +55,7 @@ const config = {
           },
         ],
       },
-    ],
-    require.resolve("@cmfcmf/docusaurus-search-local")
+    ]
   ],
 
   presets: [
@@ -63,14 +63,18 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          path: 'docs',
-          id: 'default',
-          routeBasePath: 'docs',
+         docs: {
           sidebarPath: require.resolve('./sidebar/autogen.js'),
-          ...pageOptions
+
+          editUrl:
+            'https://github.com/iamrahultanwar/me/tree/master',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+
+          editUrl:
+            'https://github.com/iamrahultanwar/me',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
