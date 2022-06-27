@@ -1,21 +1,22 @@
 ---
-title: Breadth-First Search
-sidebar_position: 3
+title: Breadth-First Search 
 ---
-
 # Breadth First Search
 
 Breadth–first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a ‘search key’) and explores the neighbor nodes first before moving to the next-level neighbors.
 
 ## Explanation
 
+
 ![clipboard.png](https://miro.medium.com/max/1000/0*tDMgFqo4ImTjMWdw.gif)
 
 Breadth–first search (BFS) is a graph traversal algorithm that explores vertices in the order of their distance from the source vertex, where distance is the minimum length of a path from the source vertex to the node as evident from the above example.
 
+
 The time complexity of BFS traversal is O(V + E), where V and E are the total number of vertices and edges in the graph, respectively. Please note that O(E) may vary between O(1) and O(V2), depending on how dense the graph is.
 
 Traversal means visiting all the nodes of a graph. Breadth First Traversal or Breadth First Search is a recursive algorithm for searching all the vertices of a graph or tree data structure.
+
 
 ## BFS algorithm
 
@@ -35,7 +36,9 @@ The algorithm works as follows:
 
 The graph might have two different disconnected parts so to make sure that we cover every vertex, we can also run the BFS algorithm on every node
 
+
 ## BFS example
+
 
 - Let's see how the Breadth First Search algorithm works with an example. We use an undirected graph with 5 vertices.
 
@@ -55,6 +58,7 @@ Next, we visit the element at the front of queue i.e. 1 and go to its adjacent n
 
 > Visit the first neighbour of start node 0, which is 1
 
+
 Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the back of the queue and visit 3, which is at the front of the queue.
 
 ![clipboard.png](5VTw0YiCk-clipboard.png)
@@ -73,21 +77,25 @@ Only 4 remains in the queue since the only adjacent node of 3 i.e. 0 is already 
 
 Since the queue is empty, we have completed the Breadth First Traversal of the graph.
 
-## BFS pseudocode
 
+## BFS pseudocode
 ```
-create a queue Q
-mark v as visited and put v into Q
-while Q is non-empty
-    remove the head u of Q
+create a queue Q 
+mark v as visited and put v into Q 
+while Q is non-empty 
+    remove the head u of Q 
     mark and enqueue all (unvisited) neighbours of u
 ```
 
+
 ## BFS Algorithm Complexity
+
 
 The time complexity of the BFS algorithm is represented in the form of `O(V + E)`, where V is the number of nodes and E is the number of edges.
 
 The space complexity of the algorithm is `O(V)`.
+
+
 
 ## BFS Algorithm Applications
 
@@ -96,6 +104,7 @@ The space complexity of the algorithm is `O(V)`.
 3.  Path finding algorithms
 4.  In Ford-Fulkerson algorithm to find maximum flow in a network
 5.  Cycle detection in an undirected graph
+
 
 ## Code Implementation
 

@@ -5,6 +5,13 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const baseUrl = process.env.BASE_URL || "/";
 
+const pageOptions = {
+  sidebarCollapsible: false,
+  editUrl: 'https://github.com/iamrahultanwar/me/tree/master',
+  showLastUpdateAuthor: true,
+  showLastUpdateTime: true,
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Learning is the key',
@@ -21,7 +28,7 @@ const config = {
   deploymentBranch: "deploy",
   plugins: [
     require.resolve("@cmfcmf/docusaurus-search-local"),
-    require.resolve("./plugins/inappeditor"),
+
     [
       '@docusaurus/plugin-pwa',
       {
@@ -50,7 +57,6 @@ const config = {
         ],
       },
     ],
-
   ],
 
   presets: [
@@ -59,7 +65,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebar/autogen.js'),
 
           editUrl:
             'https://github.com/iamrahultanwar/me/tree/master',
@@ -117,51 +123,7 @@ const config = {
 
         ],
       },
-      // footer: {
-      //   style: 'light',
-      //   links: [
-      //     {
-      //       title: 'Docs',
-      //       items: [
-      //         {
-      //           label: 'Tutorial',
-      //           to: '/docs/intro',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Stack Overflow',
-      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discordapp.com/invite/docusaurus',
-      //         },
-      //         {
-      //           label: 'Twitter',
-      //           href: 'https://twitter.com/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: '/blog',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

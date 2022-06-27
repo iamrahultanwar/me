@@ -67,29 +67,3 @@ class SLinkedList:
 
 # print(singleList.get(10))
 
-
-class DLinkedList:
-
-    def __init__(self,headValue=None):
-      self.prev = None
-      self.node = Node(headValue)
-      self.next = None
-
-    def pushPrev(self,val=0):
-        self.prev = Node(val)
-
-    def pushNext(self,val):
-        self.next = Node(val)  
-
-
-queue = deque()        
-
-queue.append(1)
-queue.append(2)
-queue.append(3)
-
-print(queue)
-
-queue.pop()
-
-print(queue)
