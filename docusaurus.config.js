@@ -63,7 +63,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-         docs: {
+        docs: {
           sidebarPath: require.resolve('./sidebar/autogen.js'),
 
           editUrl:
@@ -103,9 +103,21 @@ const config = {
             position: 'left',
             items: [
               { to: '/docs/dsa/', label: 'Data Structure' },
-              { to: 'docs/algorithm/', label: 'Algorithm' },
+              { to: '/docs/algorithm/', label: 'Algorithm' },
+              { to: '/docs/questions/', label: 'Questions' },
+              { to: '/docs/languages/', label: 'Languages' },
             ]
           },
+
+          {
+            type: 'dropdown',
+            label: 'Free Books',
+            position: 'left',
+            items: [
+              { to: '/books/algorithms', label: 'Algorithms' },
+            ]
+          },
+
 
 
           {
