@@ -1,24 +1,19 @@
 ---
-title : Graphs
-sidebar_position : 10
+title: Graphs
+sidebar_position: 10
 ---
+
 # Graphs
 
 ## Key Terms
 
 ### Graph
+
 A collection of nodes or values called **vertices** that might be related; relations between vertices are called **edges**.
 Many things in life can be represented by graphs; for example, a social network can be represented by a graph whose vertices are users and whose edges are friendships between the users. Similarly, a city map can be represented by a graph whose vertices are locations in the city
 and whose edges are roads between the locations.
 
-![Screenshot 2022-06-17 at 11.33.26 PM.png](Z2ckFL646-Screenshot 2022-06-17 at 11.33.26 PM.png)
-
-
-
-
-
 ## Types of Graph in Data Structure
-
 
 The graph is an abstract data type used to implement the undirected and directed graph notions from graph theory in mathematics.
 
@@ -26,26 +21,26 @@ A graph data structure is made up of a finite and potentially mutable set of ver
 
 So depending upon the position of these nodes and vertices, there are different types of graphs, such as:
 
-*   Null Graph
-*   Trivial Graph
-*   Non-directed Graph
-*   Directed Graph
-*   Connected Graph
-*   Disconnected Graph
-*   Regular Graph
-*   Complete Graph
-*   Cycle Graph
-*   Cyclic Graph
-*   Acyclic Graph
-*   Finite Graph
-*   Infinite Graph
-*   Bipartite Graph
-*   Planar Graph
-*   Simple Graph
-*   Multi Graph
-*   Pseudo Graph
-*   Euler Graph
-*   Hamiltonian Graph
+- Null Graph
+- Trivial Graph
+- Non-directed Graph
+- Directed Graph
+- Connected Graph
+- Disconnected Graph
+- Regular Graph
+- Complete Graph
+- Cycle Graph
+- Cyclic Graph
+- Acyclic Graph
+- Finite Graph
+- Infinite Graph
+- Bipartite Graph
+- Planar Graph
+- Simple Graph
+- Multi Graph
+- Pseudo Graph
+- Euler Graph
+- Hamiltonian Graph
 
 ### Null Graph
 
@@ -173,9 +168,9 @@ As we can see in the above image, the number of vertices in the graph and the nu
 
 For a graph to be a Bipartite graph, it needs to satisfy some of the basic preconditions. These conditions are:
 
-*   All the vertices of the graph should be divided into two distinct sets of vertices X and Y.
-*   All the vertices present in the set X should only be connected to the vertices present in the set Y with some edges. That means the vertices present in a set should not be connected to the vertex that is present in the same set.
-*   Both the sets that are created should be distinct that means both should not have the same vertices in them.
+- All the vertices of the graph should be divided into two distinct sets of vertices X and Y.
+- All the vertices present in the set X should only be connected to the vertices present in the set Y with some edges. That means the vertices present in a set should not be connected to the vertex that is present in the same set.
+- Both the sets that are created should be distinct that means both should not have the same vertices in them.
 
 ![Types of Graph in Data Structure](https://static.javatpoint.com/ds/images/types-of-graph-in-data-structure14.png)
 
@@ -238,10 +233,9 @@ In other words, A Hamiltonian path that starts and ends at the same vertex is ca
 
 The graph shown in the above image consists of a closed path ABCDEFA which starts from vertex A and traverses all other vertices or nodes without traversing any of the nodes twice other than vertex A in the path of traversal. Therefore, the graph shown in the above image is a Hamilton graph.
 
-
 ## Code Implementation
 
-```go 
+```go
 
 package main
 
@@ -328,7 +322,6 @@ func main() {
 ```
 
 ## References
-
 
 <iframe width="950" height="534" src="https://www.youtube.com/embed/JDP1OVgoa0Q" title="Graph data structure and graph representation  (Part 1 of 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

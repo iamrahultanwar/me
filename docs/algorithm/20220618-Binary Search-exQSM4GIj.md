@@ -1,6 +1,6 @@
 ---
 title: Binary Search 
-sidebar_position: 2
+side_position: 1
 ---
 # Binary Search
 
@@ -46,5 +46,25 @@ func main() {
 	arr := []int{2, 3, 5, 7, 8, 10, 12, 15, 18, 20}
 	fmt.Println(BinarySearch(arr, 7))
 }
+
+```
+
+```python
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low < high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        elif arr[mid] > target:
+            high = mid -1         
+
+    return -1
+
+print(binary_search([1,2,3,4,5,6,7,8,9,10], 5))
 
 ```

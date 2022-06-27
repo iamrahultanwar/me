@@ -1,6 +1,5 @@
 ---
 title: Binary Search Tree
-sidebar_position: 1
 ---
 # Binary Search Tree
 
