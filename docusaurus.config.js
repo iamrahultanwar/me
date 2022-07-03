@@ -93,7 +93,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          '🙂  I love to right and document my learning and prepare notes for future. <b>This site is hosted on github pages, if any issue faced raise an issue here <a href="https://github.com/iamrahultanwar/me/issues">Github Issues</a></b>',
+          '🙂  I love to write and document my learning and prepare notes for future. <b>This site is hosted on github pages, if any issue faced raise an issue here <a href="https://github.com/iamrahultanwar/me/issues">Github Issues</a></b>',
         backgroundColor: '#fafbfc',
         textColor: '#4433ff',
         isCloseable: false,
