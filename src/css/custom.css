@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
 body {
   font-family: 'Shippori Antique B1', sans-serif;
   font-size: small;
@@ -46,4 +47,14 @@ body {
 .css-button-sharp--sky:hover {
   background: #fff;
   color: #4433ff
+}
+
+/* for custom tech logo */
+img[alt=tech-logo] { width: 100px; }
+
+
+/* overrides */
+
+.admonition{
+  border-radius: 0px;
 }

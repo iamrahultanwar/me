@@ -90,6 +90,14 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
       },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '🙂  I love to right and document my learning and prepare notes for future. <b>This site is hosted on github pages, if any issue faced raise an issue here <a href="https://github.com/iamrahultanwar/me/issues">Github Issues</a></b>',
+        backgroundColor: '#fafbfc',
+        textColor: '#4433ff',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Lets Learn',
         logo: {
@@ -115,6 +123,14 @@ const config = {
             position: 'left',
             items: [
               { to: '/books/algorithms', label: 'Algorithms' },
+            ]
+          },
+          {
+            type: 'dropdown',
+            label: 'My Projects',
+            position: 'left',
+            items: [
+              { to: '/docs/projects/hydyco/intro', label: 'Hydyco' }
             ]
           },
 
