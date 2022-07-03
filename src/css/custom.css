@@ -50,7 +50,7 @@ body {
 }
 
 /* for custom tech logo */
-img[alt=tech-logo] { width: 100px; }
+img[alt=tech-logo] { width: 50px; }
 
 
 /* overrides */
