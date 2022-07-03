@@ -1,6 +1,7 @@
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import QRCode from "react-qr-code";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 # 👋 Hello, I am Rahul Tanwar
 
@@ -100,7 +101,7 @@ import QRCode from "react-qr-code";
 
 ## Download my resume
 
-<QRCode value={window.location.origin + "/file/rahul-tanwar-resume.pdf"} />
+<ResumeQR />
 
 export const Project = ({ description, tech, features }) => (
   <div>
@@ -126,3 +127,9 @@ export const Project = ({ description, tech, features }) => (
     </div>
   </div>
 );
+
+export const ResumeQR = () => (
+  <QRCode value={"https://rahultanwar.me/file/rahul-tanwar-resume.pdf"} />
+);
+
+;
