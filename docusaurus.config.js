@@ -123,6 +123,7 @@ const config = {
             position: 'left',
             items: [
               { to: '/books/algorithms', label: 'Algorithms' },
+              { to: '/books/gfg-cheatcode', label: 'GFG Cheat sheet' },
             ]
           },
           {

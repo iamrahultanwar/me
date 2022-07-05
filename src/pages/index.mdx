@@ -140,7 +140,16 @@ export const Project = ({ description, tech, features }) => (
 );
 
 export const ResumeQR = () => (
-  <QRCode value={"https://rahultanwar.me/file/rahul-tanwar-resume.pdf"} />
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "end",
+    }}
+  >
+    <QRCode value={"https://rahultanwar.me/file/rahul-tanwar-resume.pdf"} />
+    <a href="https://rahultanwar.me/file/rahul-tanwar-resume.pdf">
+      Download Resume
+    </a>
+  </div>
 );
-
-;
