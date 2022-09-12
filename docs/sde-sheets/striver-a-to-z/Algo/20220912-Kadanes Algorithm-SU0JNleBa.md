@@ -1,4 +1,4 @@
-# Kadane's Algorithm
+# Kadanes Algorithm
 
 ## Algorithm
 
