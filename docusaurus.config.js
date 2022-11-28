@@ -143,7 +143,7 @@ const config = {
             position: 'right',
           },
           {
-            to: baseUrl + '/file/rahul-tanwar-resume.pdf',
+            to: 'https://rahultanwar.me/file/rahul-tanwar-resume.pdf',
             label: 'My Resume',
             position: 'right',
             className: 'css-button-sharp--sky',
